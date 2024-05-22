@@ -35,4 +35,4 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: |
           npm install -g angular-cli-ghpages
-          npx angular-cli-ghpages --dir=dist/menu-side-bar
+          npx angular-cli-ghpages --dir=dist/menu-side-bar --no-silent
