@@ -34,5 +34,5 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
-          pnpm install -g angular-cli-ghpages
+          npm install -g angular-cli-ghpages
           npx angular-cli-ghpages --dir=dist/menu-side-bar
