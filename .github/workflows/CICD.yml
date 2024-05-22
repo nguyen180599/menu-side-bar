@@ -29,10 +29,10 @@ jobs:
         run: pnpm install
 
       - name: Build Angular application
-        run: npm run build -- --prod
+        run: pnpm run build -- --prod
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
-          npm install -g angular-cli-ghpages
+          pnpm install -g angular-cli-ghpages
           npx angular-cli-ghpages --dir=dist/menu-side-bar
