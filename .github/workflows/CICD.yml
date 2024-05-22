@@ -41,3 +41,5 @@ jobs:
         run: |
           npm install -g angular-cli-ghpages
           npx angular-cli-ghpages --dir=dist/menu-side-bar --no-silent
+          with:
+            github_token: ${{secrets.cicd}}
