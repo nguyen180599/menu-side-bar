@@ -18,6 +18,7 @@
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/menu-side-bar",
+            "baseHref": "/menu-side-bar/",
             "outputHashing": "none",
             "index": "src/index.html",
             "main": "src/main.ts",
