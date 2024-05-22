@@ -31,6 +31,14 @@ jobs:
       - name: Build Angular application
         run: pnpm run build
 
+      - name: Set Git user name and email
+        run: |
+          git config --global user.email "${USER_EMAIL}"
+          git config --global user.name "${USER_NAME}"
+        env:
+          USER_EMAIL: pxnguyen180599@gmail.com
+          USER_NAME: nguyen180599
+
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
